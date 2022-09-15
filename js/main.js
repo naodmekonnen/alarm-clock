@@ -1,35 +1,38 @@
-const alarmON = false;
+
+var displayYear = new Date()
+var month = displayYear.getMonth() + 1
+var day = displayYear.getDate()
+var year = displayYear.getFullYear()
+
+let showYear = month + "/" + day + "/" + year;
+document.getElementById("display-date").innerHTML = showYear;
+
+// document.write(month + "/" + day + "/" + year)
 
 function currentTime (){
 
-const d = new Date ();
+const dayTime = new Date ();
 
-let Hour = d.getHours();
+let Hour = dayTime.getHours();
 
-let Minutes = d.getMinutes();
+let Minutes = dayTime.getMinutes();
 if (Minutes < 10){
     Minutes = "0" + Minutes
 }
 
-    let Seconds = d.getSeconds();
+    let Seconds = dayTime.getSeconds();
 if (Seconds < 10){
     Seconds = "0" + Seconds
 }
 
 let newTime = Hour + ":" + Minutes + ":" + Seconds;
-document.getElementById("clock-display").innerHTML = newTime;
+document.getElementById("clock-display").innerHTML = newTime
 
-if(alarmON === false)
-    if (newTime > '17:13:00' && newTime < '17:13:10') {
-    alarmON = true;
-    document.getElementById("ALARM").innerHTML = "WAKE UP!!!!";
-    }
+let chosenTime = document.getElementById('chooseTime').value
 
-    else {
-    document.getElementById("ALARM").innerHTML = " ";
+if (chosenTime + ":00" === newTime){
+    document.getElementById("ALARM").innerHTML = 'WAKE UP!!!';
 }
 
-    btn.addEventListener
 };
-
 setInterval(currentTime, 1000);

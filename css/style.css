@@ -1,9 +1,11 @@
- #clock-display
+ #clock-display, #display-date, #chooseTime
 {
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
+    width: 100px;
+    border: 10px solid green;
+    padding: 12px;
     margin: 20px;
+    align-items: center;
+    
   }
 
   
