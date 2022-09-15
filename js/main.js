@@ -34,5 +34,10 @@ if (chosenTime + ":00" === newTime){
     document.getElementById("ALARM").innerHTML = 'WAKE UP!!!';
 }
 
+document.getElementById("offButton").addEventListener('click', () => 
+    document.getElementById("ALARM").innerHTML= ''
+
+)
+
 };
 setInterval(currentTime, 1000);
