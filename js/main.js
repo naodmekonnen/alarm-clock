@@ -32,8 +32,11 @@ document.getElementById("clock-display").innerHTML = newTime
 
 let chosenTime = document.getElementById('chooseTime').value
 
+let alarmSound = new Audio ('/audio/audio1.mp3');
 if (chosenTime + ":00" === newTime){
-    alert("WAKE UP!!")
+    alarmSound.play();
+    // alert("WAKE UP!!")
+
 }
 
 };
