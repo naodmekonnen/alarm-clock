@@ -1,5 +1,7 @@
 
-
+body {
+  background-color: rgb(91, 124, 126);
+}
 
 .container {
 position:absolute;
@@ -11,6 +13,7 @@ border-color: rgb(12, 26, 37);
 border-style: solid;
 border-width: 4px;
 overflow: auto;
+text-align: center;
 
 } 
  
@@ -20,7 +23,6 @@ overflow: auto;
     padding: 12px;
     margin: 20px;
     justify-content: center;
-    text-align: center;
     
   }
 
@@ -35,6 +37,8 @@ overflow: auto;
     font:bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
+    position: relative;
+    text-align: center;
   }
   
   #ALARM{
